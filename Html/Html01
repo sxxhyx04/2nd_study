@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> css </title>
+        <style> 
+        </style>
+        <body>
+            <h1>글자 태그의 가장 큰 글씨입니다.</h1>
+<!-- br은 한 줄 띄워주는 태그입니다. 엔터 효과 -->
+            <br />
+            <h2>글자 태그 중 두 번째 큰 글씨입니다.</h2>
+<!-- hr은 줄 긋는 태그입니다. -->
+            <hr />
+            <p>본문 태그입니다.</p>
+<!-- 목록 태그입니다. -->
+            <h1>ol 태그 입니다.</h1>
+            <ol>
+                <li>페이스북</li>
+                <li>인스타 그램</li>
+                <li>틱톡</li>
+            </ol>
+            <h1>ul 태그입니다.</h1>
+            <ul>
+                <li>페이스북</li>
+                <li>인스타 그램</li>
+                <li>틱톡</li>
+            </ul>
+            <table border = "3">
+                <tr>
+                <th>헤더 1</th>
+                <th>헤더 2</th>
+                </tr>
+                <tr>
+                    <td>데이터 1</td>
+                    <td>데이터 1</td>
+                </tr>
+                <tr>
+                    <td>데이터 2</td>
+                    <td>데이터 2</td> 
+                </tr>
+            </table>
+                <hr/>
+                <table border="3">
+                <tr>
+                    <th>이름</th>
+                    <th>날짜</th>
+                    <th>생년월일</th>
+                </tr>
+                <tr>
+                    <td>박서현</td>
+                    <td>10-04</td>
+                    <td>040124</td>
+                </tr>
+                </table>
+                <hr/>
+<!-- form태그로 사용자가 입력한 데이터를 서버로 보내는 틀 -->
+                <form>
+<!-- 입력창을 띄워 데이터의 각각 이름 비번 파일을 입력받습니다. -->
+                    <input type = "text" name = "name" /><br/>
+                    <input type = "password" name = "password" /><br/>
+                    <input type = "file" name = "file" /><br/>
+<!-- 제출합니다. -->
+                    <input type = "submit" />
+<!-- 체크 버튼입니다. -->
+                    <input type = "button" />
+                    <input type = "checkbox" />
+                </form>
+                <hr/>
+                <form>
+                    <textarea></textarea>
+                </form>
+                <hr />
+<!-- 여러 목록중 선택할 수 있게 하는 태그입니다. -->
+                <select>
+<!-- 옵션입니다. select에서 선택할 수 있는 목록을 만듭니다. -->
+                    <option>김밥</option>
+                    <option>떡볶이</option>
+                    <option>튀김</option>
+                    <option>어묵</option>
+<!-- 그룹화 입니다. 국산차에 대한 차종을 선택할 수 있습니다. -->
+                    <optgroup label="국산차">
+<!-- value는 사용자가 제출하였을 때 서버로 넘어가기 위해 돕는 태그입니다. -->
+                    <option value="avante">아반떼</option>
+                    <option value="grandeur">그랜저</option>
+                    <option value="k5">K5</option>
+                    <option>제네시스</option>
+            </optgroup>
+                </select>
+                <br/><br/>
+<!-- div는 한 줄을 차지하고 자동 줄바꿈을 합니다. -->
+                <div>한 줄의 영역을 차지합니다.</div>
+                <div>한 줄의 영역을 차지합니다.</div>
+<!-- span태그는 글자의 영역만 차지하고 줄바꿈을 안 합니다. !단 인라인 요소끼리 사용할 때만 해당합니다. 블록영역은 자동 줄바꿈 됨. ex) h태그나 p태그 등등-->
+                <span>한 줄의</span><span> 영역을 차지합니다.</span><b> 이런식으로 인라인 요소만 붙습니다.</b>
+        </body>
+</head>
+</html>
