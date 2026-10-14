@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS06</title>
+    <style>
+    </style>
+    <script>
+// 변수 개념
+        var name = "박" + '서' + "현";
+// 데이터 객체를 date에 담습니다.
+        var date = new Date();
+// 데이터를 불러오고 hours의 변수에 담습니다.
+        var hours = date.getHours();
+
+// 조건문 입니다. 위에 담은 객체를 가지고 실행됩니다.
+        if(hours < 5){
+            alert("잠 잘 시간.");
+        } else {
+            if(hours < 7){
+                alert("준비");
+            }else {
+                alert("gngn");
+            }
+        }
+// 출력합니다.
+        alert("Hello JavaScript");
+        alert(name);
+
+// 익명함수 코드 var변수에 함수를 담아서 출력함.
+        var 함수 = function(){
+            alert("함수 1");
+            alert("함수 2");
+        };
+
+        alert(typeof (함수) + ' : ' + 함수);
+
+// 선택적 함수이고 우선순위는 익명함수가 더 높다.
+        function 함수(){
+            alert("함수01")
+            alert("함수02")
+        };
+        alert(typeof (함수) + ' : ' + 함수);
+    </script>
+</head>
+<body>
+</body>
+</html>
