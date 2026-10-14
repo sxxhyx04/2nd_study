@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            css3
+        </title>
+        <script>
+// 기본 배열 구현
+            var array = ['사과', '바나나', '망고', '딸기'];
+// 각 컬럼별 값 입력
+            var product = {
+                제품명 : '7D 건조 망고',
+                유형 : '당절임',
+                성분 : '망고 , 설탕, 치자황색소',
+                원산지 : '필리핀'
+            };
+            var person = {
+                name : "박서현",
+                eat : function(food){
+// this를 사용해줘야하는 이유 : eat에서 사용하기 때문에 person의 객체인 this.name을 사용
+                    alert(this.name + food + '을 / 를 먹습니다.');
+                }
+            };
+// 인덱스로 출력 가능
+            alert(array[0]);
+            alert(array[1]);
+// 컬럼으로 확인 가능
+            alert(product['제품명']);
+            alert(product['유형']);
+// person의 문자열로 호출
+            person.eat("밥 ");
+        </script>
+        <style>
+
+        </style>
+    </head>
+    <body>
+
+    </body>
+</html>
