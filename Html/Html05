@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>css05</title>
+        <style>
+/* 부정 선택자 입니다. password타입에 색이 아닌 다른 타입에 색이 적용됩니다. */
+            input:not([type=password]){
+            background: red;
+        }
+
+/* 링크 선택자 입니다. */
+
+/* 기본적으로 오는 밑줄을 제거합니다. */
+        a { text-decoration: none; }
+/* 사용자가 한 번 방문하면 색상을 적용합니다. */
+        a:visited { color : red; }
+
+        a:link::after { content: '-' attr(href); }
+        </style>
+    </head>
+<!-- 부정 선택자로 스타일을 적용하여 pass에는 색상이 없고 text에만 색상이 적용 됩니다. -->
+        <input type = "password" />
+        <input type = "text" />
+        <input type = "password" />
+        <input type = "text" />
+        <h1><a>Noting</a></h1>
+        <h1><a href = "https://hanb.co.kr">한빛</a></h1>
+        <h1><a href = "https://naver.com">네이버</a></h1>
+        <body>
+    </body>
+</html>
