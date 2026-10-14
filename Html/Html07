@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> CSS3 Selector Basic</title>
+        <style>
+        </style>
+        <script>
+// 1. 전달받은 콜백 함수를 10번 실행해주는 함수를 '선언'합니다.
+function callTenTimes(callback) {
+    for(var i = 0; i < 10; i++){
+        callback();
+    }
+}
+
+// 2. callback이라는 변수에 익명 함수를 저장합니다. (함수 안에는 alert가 있습니다.)
+var callback = function(){
+    alert("함수호출");
+}
+
+// 3. callTenTimes 함수를 호출하면서, 괄호 () 안에 변수 callback을 전달합니다.
+callTenTimes(callback);
+
+
+// ============================================================
+
+
+// 4. (위와 동일) 10번 실행해주는 함수 선언
+function callTenTimes(callback){
+    for(var i = 0; i < 10; i++){
+        callback();
+    }
+}
+
+// 5. callTenTimes 함수를 호출함과 동시에, 매개변수 자리에 익명 함수를 직접 넣어서 전달합니다.
+callTenTimes(function (){
+    alert("함수 호출");
+})
+        </script>
+</head>
+    <body>
+    </body>
+</html>
